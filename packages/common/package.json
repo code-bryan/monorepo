@@ -1,0 +1,22 @@
+{
+  "name": "@sa/common",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "tsc": "tsc --noEmit"
+  },
+  "type": "module",
+  "main": "src/index.tsx",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.73.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.75",
+    "@types/react-native": "^0.73.0",
+    "react": "^18.2.0",
+    "react-native": "^0.73.6",
+    "typescript": "^5.4.5"
+  }
+}
