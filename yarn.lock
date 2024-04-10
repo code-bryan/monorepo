@@ -2866,6 +2866,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@sa/web@workspace:packages/web":
+  version: 0.0.0-use.local
+  resolution: "@sa/web@workspace:packages/web"
+  dependencies:
+    "@sa/common": "workspace:*"
+    "@types/react": "npm:^18.2.75"
+    "@types/react-dom": "npm:^18.2.22"
+    "@types/react-native": "npm:^0.73.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
+    "@typescript-eslint/parser": "npm:^7.2.0"
+    "@vitejs/plugin-react": "npm:^4.2.1"
+    eslint: "npm:^8.57.0"
+    eslint-plugin-react-hooks: "npm:^4.6.0"
+    eslint-plugin-react-refresh: "npm:^0.4.6"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    react-native-web: "npm:^0.19.10"
+    typescript: "npm:^5.2.2"
+    vite: "npm:^5.2.0"
+  languageName: unknown
+  linkType: soft
+
 "@sideway/address@npm:^4.1.5":
   version: 4.1.5
   resolution: "@sideway/address@npm:4.1.5"
@@ -4586,9 +4608,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.732
-  resolution: "electron-to-chromium@npm:1.4.732"
-  checksum: 10c0/6a67a348156c58ca04ad335220789e892f0c535485b76c5213d649172b43c941b8d9e163546fc00e6a07efd2bddd3da9af9583e3962d121f5020d7d7caa70b94
+  version: 1.4.733
+  resolution: "electron-to-chromium@npm:1.4.733"
+  checksum: 10c0/729e79256748102180a74d997efafb8377f100a8e087aef99175ec6ee298aa715fa41f6a869af906adaefb7fcba43f898c42f721c9ea8980c13744d2ef7ea1b2
   languageName: node
   linkType: hard
 
@@ -10081,28 +10103,6 @@ __metadata:
   checksum: 10c0/5b61ca583a95e2dd85d7078400190efd452e05751a64accb8c06ce4db65d7e0b0cde9917d705e826a2e05cc2548f61efde115ffa374c3e436d04be45c889e5b4
   languageName: node
   linkType: hard
-
-"web@workspace:packages/web":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:packages/web"
-  dependencies:
-    "@sa/common": "workspace:*"
-    "@types/react": "npm:^18.2.75"
-    "@types/react-dom": "npm:^18.2.22"
-    "@types/react-native": "npm:^0.73.0"
-    "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
-    "@typescript-eslint/parser": "npm:^7.2.0"
-    "@vitejs/plugin-react": "npm:^4.2.1"
-    eslint: "npm:^8.57.0"
-    eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-react-refresh: "npm:^0.4.6"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-native-web: "npm:^0.19.10"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^5.2.0"
-  languageName: unknown
-  linkType: soft
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
