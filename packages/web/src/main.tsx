@@ -1,9 +1,21 @@
-import React from 'react'
+
 import ReactDOM from 'react-dom/client'
-import App from './app.tsx'
+import { RouteComponentProps, Router } from "@reach/router";
+import { PageOne, PageTwo } from "@sa/common";
+
+function WebPageOne(props: RouteComponentProps) {
+  const { navigate } = props;
+  return <PageOne onPage={() => navigate?.('/second')} />;
+}
+
+function WebPageTwo(props: RouteComponentProps) {
+  const { navigate } = props;
+  return <PageTwo onPage={() => navigate?.('/')} />
+}
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router style={{ height: '100%' }}>
+    <WebPageOne path="/" />
+    <WebPageTwo path="/second" />
+  </Router>
 )

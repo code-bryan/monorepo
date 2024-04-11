@@ -7,5 +7,9 @@
       "packages/*"
     ]
   },
+  "scripts": {
+    "native": "yarn workspace @sa/native start",
+    "web": "yarn workspace @sa/web dev"
+  },
   "packageManager": "yarn@4.1.1"
 }
