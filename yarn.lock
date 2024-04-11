@@ -2956,6 +2956,7 @@ __metadata:
     eslint-plugin-react-refresh: "npm:^0.4.6"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-native: "npm:^0.73.6"
     react-native-web: "npm:^0.19.10"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.2.0"
