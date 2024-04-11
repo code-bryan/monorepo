@@ -1,5 +1,4 @@
-import { SafeAreaView, Text } from "react-native";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { NativeStackNavigationProp, createNativeStackNavigator } from "@react-navigation/native-stack";
 import { PageOne, PageTwo } from "@sa/common";
 
