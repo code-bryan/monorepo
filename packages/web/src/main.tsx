@@ -1,7 +1,7 @@
 
 import ReactDOM from 'react-dom/client'
 import { RouteComponentProps, Router } from "@reach/router";
-import { PageOne, PageTwo } from "@sa/common";
+import { PageOne, PageTwo, RootLayout } from "@sa/common";
 
 function WebPageOne(props: RouteComponentProps) {
   const { navigate } = props;
@@ -14,8 +14,10 @@ function WebPageTwo(props: RouteComponentProps) {
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <Router style={{ height: '100%' }}>
-    <WebPageOne path="/" />
-    <WebPageTwo path="/second" />
-  </Router>
+  <RootLayout>
+    <Router style={{ height: '100%' }}>
+      <WebPageOne path="/" />
+      <WebPageTwo path="/second" />
+    </Router>
+  </RootLayout>
 )

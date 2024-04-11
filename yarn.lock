@@ -2909,6 +2909,7 @@ __metadata:
   dependencies:
     "@types/react": "npm:^18.2.75"
     "@types/react-native": "npm:^0.73.0"
+    jotai: "npm:^2.8.0"
     react: "npm:^18.2.0"
     react-native: "npm:^0.73.6"
     react-native-normalize: "npm:^1.0.1"
@@ -2940,6 +2941,7 @@ __metadata:
     babel-jest: "npm:^29.6.3"
     eslint: "npm:^8.19.0"
     jest: "npm:^29.6.3"
+    jotai: "npm:^2.8.0"
     prettier: "npm:2.8.8"
     react: "npm:18.2.0"
     react-native: "npm:0.73.6"
@@ -2973,6 +2975,7 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.6"
+    jotai: "npm:^2.8.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-native: "npm:^0.73.6"
@@ -7107,6 +7110,21 @@ __metadata:
     "@sideway/formula": "npm:^3.0.1"
     "@sideway/pinpoint": "npm:^2.0.0"
   checksum: 10c0/818e51bd2d219339cff91f9d6fef8bab2da396e80a051cf73fb8ce7362c191af395bfa2d0e54eaa9c9cb8d5afafddb54eb768bc3068ab33908cbd5a1697e7d3e
+  languageName: node
+  linkType: hard
+
+"jotai@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "jotai@npm:2.8.0"
+  peerDependencies:
+    "@types/react": ">=17.0.0"
+    react: ">=17.0.0"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    react:
+      optional: true
+  checksum: 10c0/6b2f59749530478163e41b8b1260b99cdab533541a5b9b2dcd885f2ab440391c5ee7855d627cbe28e043b9bcd736d44837b4a8ab20a2761176bba92e623a284e
   languageName: node
   linkType: hard
 
