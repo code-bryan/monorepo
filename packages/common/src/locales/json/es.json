@@ -1,0 +1,8 @@
+{
+  "base": {
+    "page-one": "Pagina 1",
+    "page-two": "Pagina 2",
+    "hello-example": "Hola desde el example",
+    "goto": "Ve al {{page}}"
+  }
+}

@@ -22,6 +22,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "i18n-js": "^4.4.3",
     "jotai": "^2.8.0",
     "react-native-normalize": "^1.0.1"
   }

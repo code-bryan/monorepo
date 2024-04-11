@@ -1,6 +1,7 @@
 import { StyleSheet, View, Text, SafeAreaView, Pressable, TextInput } from "react-native";
 import normalize from "react-native-normalize";
 import { useExampleAtom } from "../../model/state";
+import { translate } from "../../locales";
 
 type Props = {
   onPage?: () => void;
@@ -13,13 +14,13 @@ export function PageOne(props: Props) {
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.root}>
-        <Text style={styles.title}>Page 1</Text>
+        <Text style={styles.title}>{translate('base.page-one')}</Text>
         <Text style={styles.subtitle}>{example}</Text>
 
         <TextInput value={example} onChangeText={(text) => setExample(text)} />
 
         <Pressable style={styles.button} onPress={onPage}>
-          <Text style={styles.buttonTitle}>Go to page 2</Text>
+          <Text style={styles.buttonTitle}>{translate('base.goto', { page: translate('base.page-two') })}</Text>
         </Pressable>
       </View>
     </SafeAreaView>
