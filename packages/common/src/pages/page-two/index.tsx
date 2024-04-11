@@ -1,5 +1,6 @@
 import { StyleSheet, View, Text, SafeAreaView, Pressable, Dimensions } from "react-native";
 import normalize from "react-native-normalize";
+import { translate } from "../../locales";
 
 type Props = {
   onPage?: () => void;
@@ -11,11 +12,13 @@ export function PageTwo(props: Props) {
     <SafeAreaView style={styles.safe}>
       <View style={styles.root}>
         <Text style={styles.title}>
-          Page 2
+          {translate('base.page-two')}
         </Text>
 
         <Pressable style={styles.button} onPress={onPage}>
-          <Text style={styles.buttonTitle}>Go to page 1</Text>
+          <Text style={styles.buttonTitle}>
+            {translate('base.goto', { page: translate('base.page-one') })}
+          </Text>
         </Pressable>
       </View>
     </SafeAreaView>
@@ -31,6 +34,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: normalize(20),
     backgroundColor: 'lightgreen',
+    gap: normalize(20),
   },
   title: {
     color: "#000",

@@ -1,7 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { NativeStackNavigationProp, createNativeStackNavigator } from "@react-navigation/native-stack";
 import { PageOne, PageTwo, RootLayout, exampleAtom, store, useExampleAtom } from "@sa/common";
-import { useAtom } from "jotai";
 import { PropsWithChildren } from "react";
 import { SafeAreaView, TextInput } from "react-native";
 

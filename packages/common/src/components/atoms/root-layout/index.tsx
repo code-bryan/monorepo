@@ -1,11 +1,28 @@
-import { Provider } from "jotai";
-import { PropsWithChildren } from "react";
+import { Provider, useSetAtom } from "jotai";
+import { PropsWithChildren, useEffect } from "react";
 import { store } from "../../../model/state";
+import { changeLocale } from "../../../locales";
 
-export function RootLayout(props: PropsWithChildren) {
+// TODO: find a way to change between laguages 
+interface Props extends PropsWithChildren {
+  locale?: 'en' | 'es';
+}
+
+export function RootLayout(props: Props) {
+  const { children } = props;
+
   return (
     <Provider store={store}>
-      {props.children}
+      <ChangeLanguage {...props} />
+      {children}
     </Provider>
   );
+}
+
+function ChangeLanguage(props: Props) {
+  const { locale = 'en' } = props;
+
+  useEffect(() =>  changeLocale(locale), [locale]);
+
+  return null;
 }
