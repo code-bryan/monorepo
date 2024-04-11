@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, SafeAreaView, Pressable } from "react-native";
+import { StyleSheet, View, Text, SafeAreaView, Pressable, Dimensions } from "react-native";
 import normalize from "react-native-normalize";
 
 type Props = {
@@ -25,6 +25,7 @@ export function PageTwo(props: Props) {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
+    minHeight: '100%',
   },
   root: {
     flex: 1,

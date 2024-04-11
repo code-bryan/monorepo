@@ -2304,6 +2304,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reach/router@npm:^1.3.4":
+  version: 1.3.4
+  resolution: "@reach/router@npm:1.3.4"
+  dependencies:
+    create-react-context: "npm:0.3.0"
+    invariant: "npm:^2.2.3"
+    prop-types: "npm:^15.6.1"
+    react-lifecycles-compat: "npm:^3.0.4"
+  peerDependencies:
+    react: 15.x || 16.x || 16.4.0-alpha.0911da3
+    react-dom: 15.x || 16.x || 16.4.0-alpha.0911da3
+  checksum: 10c0/083fcb658ae5cd0de2b7ebe56bbb8c1b4aa6ec035038d41916afcdd2f31ffd7ccdd6848f7ee8e53d562c31fc4c1b1953fd7007eb9d57daf65779f344ca5a5373
+  languageName: node
+  linkType: hard
+
 "@react-native-community/cli-clean@npm:12.3.6":
   version: 12.3.6
   resolution: "@react-native-community/cli-clean@npm:12.3.6"
@@ -2897,10 +2912,12 @@ __metadata:
     react: "npm:^18.2.0"
     react-native: "npm:^0.73.6"
     react-native-normalize: "npm:^1.0.1"
+    react-native-web: "npm:^0.19.10"
     typescript: "npm:^5.4.5"
   peerDependencies:
     react: ^18.2.0
     react-native: ^0.73.6
+    react-native-web: ^0.19.10
   languageName: unknown
   linkType: soft
 
@@ -2944,7 +2961,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sa/web@workspace:packages/web"
   dependencies:
+    "@reach/router": "npm:^1.3.4"
     "@sa/common": "workspace:*"
+    "@types/reach__router": "npm:^1.3.15"
     "@types/react": "npm:^18.2.75"
     "@types/react-dom": "npm:^18.2.22"
     "@types/react-native": "npm:^0.73.0"
@@ -2960,6 +2979,7 @@ __metadata:
     react-native-web: "npm:^0.19.10"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.2.0"
+    vite-plugin-react-native-web: "npm:^1.0.2"
   languageName: unknown
   linkType: soft
 
@@ -3113,6 +3133,15 @@ __metadata:
   version: 15.7.12
   resolution: "@types/prop-types@npm:15.7.12"
   checksum: 10c0/1babcc7db6a1177779f8fde0ccc78d64d459906e6ef69a4ed4dd6339c920c2e05b074ee5a92120fe4e9d9f1a01c952f843ebd550bee2332fc2ef81d1706878f8
+  languageName: node
+  linkType: hard
+
+"@types/reach__router@npm:^1.3.15":
+  version: 1.3.15
+  resolution: "@types/reach__router@npm:1.3.15"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/4d1c867369d2620f0941b224d3fe36c644eab90505ca9a7fce470cda0cbe0c2ee7469d52f382e97ed91440674d83f356c6bd6347cdf7167c9152e2631d28b7d4
   languageName: node
   linkType: hard
 
@@ -4434,6 +4463,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-react-context@npm:0.3.0":
+  version: 0.3.0
+  resolution: "create-react-context@npm:0.3.0"
+  dependencies:
+    gud: "npm:^1.0.0"
+    warning: "npm:^4.0.3"
+  peerDependencies:
+    prop-types: ^15.0.0
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0
+  checksum: 10c0/3f9dfde23da59e3f748b5f1b06c7ff8cbf48095cf2d62212427195860f1ee4b2b0b475280c19592f7fffb9fd100fd739af687281d7c5c93806d519bf66f6dd86
+  languageName: node
+  linkType: hard
+
 "cross-fetch@npm:^3.1.5":
   version: 3.1.8
   resolution: "cross-fetch@npm:3.1.8"
@@ -5581,6 +5623,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flow-remove-types@npm:^2.233.0":
+  version: 2.233.0
+  resolution: "flow-remove-types@npm:2.233.0"
+  dependencies:
+    hermes-parser: "npm:0.20.1"
+    pirates: "npm:^3.0.2"
+    vlq: "npm:^0.2.1"
+  bin:
+    flow-node: flow-node
+    flow-remove-types: flow-remove-types
+  checksum: 10c0/64dea9b497d4ec84286744440e9d560468ce63fd66a6a18ab6241e87a0ff009580a452f4eee35bd8684a40c03ad305f208764f1741b9372a96fd5c23662451ad
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.3
   resolution: "for-each@npm:0.3.3"
@@ -5846,6 +5902,13 @@ __metadata:
   version: 1.4.0
   resolution: "graphemer@npm:1.4.0"
   checksum: 10c0/e951259d8cd2e0d196c72ec711add7115d42eb9a8146c8eeda5b8d3ac91e5dd816b9cd68920726d9fd4490368e7ed86e9c423f40db87e2d8dfafa00fa17c3a31
+  languageName: node
+  linkType: hard
+
+"gud@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "gud@npm:1.0.0"
+  checksum: 10c0/a4db6edc18e2c4e3a22dc9e639e40a4e5650d53dae9cf384a96d5380dfa17ddda376cf6b7797a5c30d140d2532e5a69d167bdb70c2c151dd673253bac6b027f3
   languageName: node
   linkType: hard
 
@@ -6131,7 +6194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"invariant@npm:^2.2.4":
+"invariant@npm:^2.2.3, invariant@npm:^2.2.4":
   version: 2.2.4
   resolution: "invariant@npm:2.2.4"
   dependencies:
@@ -7989,6 +8052,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-modules-regexp@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "node-modules-regexp@npm:1.0.0"
+  checksum: 10c0/d4a9b6425a18e9fadd38f21a7f7820b3bfda4663c7d3b9f80043e3f5f7e27a0a1e04f524077b00a15ae77148cd81319da5772900229d89541062f7e876b36763
+  languageName: node
+  linkType: hard
+
 "node-releases@npm:^2.0.14":
   version: 2.0.14
   resolution: "node-releases@npm:2.0.14"
@@ -8387,6 +8457,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pirates@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "pirates@npm:3.0.2"
+  dependencies:
+    node-modules-regexp: "npm:^1.0.0"
+  checksum: 10c0/f71519f64abff750ad00398e7a0f724e7d3af0ce14c0cf149a47dd9e1fae5e9aea24cb3a63b4ce8dce8b051f7d44531af6743078e33f72cb8602c5a7365185d1
+  languageName: node
+  linkType: hard
+
 "pirates@npm:^4.0.4, pirates@npm:^4.0.6":
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
@@ -8537,7 +8616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.1, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -8646,6 +8725,13 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 10c0/2bdb6b93fbb1820b024b496042cce405c57e2f85e777c9aabd55f9b26d145408f9f74f5934676ffdc46f3dcff656d78413a6e43968e7b3f92eea35b3052e9053
+  languageName: node
+  linkType: hard
+
+"react-lifecycles-compat@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "react-lifecycles-compat@npm:3.0.4"
+  checksum: 10c0/1d0df3c85af79df720524780f00c064d53a9dd1899d785eddb7264b378026979acbddb58a4b7e06e7d0d12aa1494fd5754562ee55d32907b15601068dae82c27
   languageName: node
   linkType: hard
 
@@ -10202,6 +10288,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite-plugin-react-native-web@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "vite-plugin-react-native-web@npm:1.0.2"
+  dependencies:
+    flow-remove-types: "npm:^2.233.0"
+  checksum: 10c0/0d8a76848a3863d89cb50604b8809850b1d9f449581ee443e79441d14110eea293124fa28be9fb8b9d7d8dbd7acb844521cf87ee0c0f1337a1d92b3a14199f1a
+  languageName: node
+  linkType: hard
+
 "vite@npm:^5.2.0":
   version: 5.2.8
   resolution: "vite@npm:5.2.8"
@@ -10242,6 +10337,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vlq@npm:^0.2.1":
+  version: 0.2.3
+  resolution: "vlq@npm:0.2.3"
+  checksum: 10c0/d1557b404353ca75c7affaaf403d245a3273a7d1c6b3380ed7f04ae3f080e4658f41ac700d6f48acb3cd4875fe7bc7da4924b3572cd5584a5de83b35b1de5e12
+  languageName: node
+  linkType: hard
+
 "vlq@npm:^1.0.0":
   version: 1.0.1
   resolution: "vlq@npm:1.0.1"
@@ -10262,6 +10364,15 @@ __metadata:
   version: 0.1.1
   resolution: "warn-once@npm:0.1.1"
   checksum: 10c0/f531e7b2382124f51e6d8f97b8c865246db8ab6ff4e53257a2d274e0f02b97d7201eb35db481843dc155815e154ad7afb53b01c4d4db15fb5aa073562496aff7
+  languageName: node
+  linkType: hard
+
+"warning@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "warning@npm:4.0.3"
+  dependencies:
+    loose-envify: "npm:^1.0.0"
+  checksum: 10c0/aebab445129f3e104c271f1637fa38e55eb25f968593e3825bd2f7a12bd58dc3738bb70dc8ec85826621d80b4acfed5a29ebc9da17397c6125864d72301b937e
   languageName: node
   linkType: hard
 

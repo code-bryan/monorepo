@@ -10,13 +10,15 @@
   "main": "src/index.tsx",
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-native": "^0.73.6"
+    "react-native": "^0.73.6",
+    "react-native-web": "^0.19.10"
   },
   "devDependencies": {
     "@types/react": "^18.2.75",
     "@types/react-native": "^0.73.0",
     "react": "^18.2.0",
     "react-native": "^0.73.6",
+    "react-native-web": "^0.19.10",
     "typescript": "^5.4.5"
   },
   "dependencies": {
